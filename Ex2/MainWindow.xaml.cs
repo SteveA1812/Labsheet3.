@@ -54,7 +54,7 @@ namespace Ex2
         private void lbxMembers_OnClick(object sender, RoutedEventArgs e)
 
         {
-            
+
             NameInput.Text = lbxMembers.SelectedItem.ToString();
         }
     }
