@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Labsheet3.E1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="450" Width="800"
+       Loaded="Window_Loaded" >
+
+    <Grid Background="#FFE0D6D6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="81*"/>
+            <RowDefinition Height="183*"/>
+            <RowDefinition Height="155*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="179*"/>
+            <ColumnDefinition Width="411*"/>
+            <ColumnDefinition Width="202*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lbxExpenses" Grid.Column="1" HorizontalAlignment="Left" Height="173" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="401" />
+        <TextBlock x:Name="txtblkTotalExpenses" Grid.Column="1" HorizontalAlignment="Left" Margin="345,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="94"/>
+        <Button x:Name="btnAddExpense" Content="Add Expenses" Grid.Column="1" HorizontalAlignment="Left" Margin="10,26,0,0" Grid.Row="2" VerticalAlignment="Top" Width="74" FontSize="10" Click="btnAddExpense_Click"/>
+        <Button Content="Remove" Grid.Column="1" HorizontalAlignment="Left" Margin="8,64,0,0" Grid.Row="2" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.5,0.5" Click="Button_Click">
+           
+        </Button>
+
     </Grid>
 </Window>
